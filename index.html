@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" rel="icon" href="./assets/calculadora.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <title>Rael Math</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <h1>Rael Math</h1>
+            <p id="resultado"></p>
+
+            <table>
+                <tr>
+                    <td><button onclick="clean()" class="btn">C</button></td>
+                    <td><button onclick="back()" class="btn">&lt;</button></td>
+                    <td><button onclick="buttom('/')" class="btn">/</button></td>
+                    <td><button onclick="buttom('*')" class="btn">X</button></td>
+
+                </tr>
+
+                <tr>
+                    <td><button onclick="buttom('7')" class="btn">7</button></td>
+                    <td><button onclick="buttom('8')" class="btn">8</button></td>
+                    <td><button onclick="buttom('9')" class="btn">9</button></td>
+                    <td><button onclick="buttom('-')" class="btn">-</button></td>
+
+                </tr>
+
+                <tr>
+                    <td><button onclick="buttom('4')" class="btn">4</button></td>
+                    <td><button onclick="buttom('5')" class="btn">5</button></td>
+                    <td><button onclick="buttom('6')" class="btn">6</button></td>
+                    <td><button onclick="buttom('+')" class="btn">+</button></td>
+
+                </tr>
+                <tr>
+                    <td><button onclick="buttom('1')" class="btn">1</button></td>
+                    <td><button onclick="buttom('2')" class="btn">2</button></td>
+                    <td><button onclick="buttom('3')" class="btn">3</button></td>
+                    <td rowspan="2"><button onclick="calcular()" class="btn" style="height: 106px;">=</button></td>
+
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button onclick="buttom('0')" class="btn" style="width: 106px;">0</button></td>
+                    <td><button onclick="buttom('.')" class="btn">.</button></td>
+
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
